@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.span {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.span--colored {
+  color: #a9b665;
+}
