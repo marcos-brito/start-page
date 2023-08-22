@@ -1,18 +1,28 @@
-import "../styles/Header.css";
-import ConfigIcon from "./configIcon.tsx";
+import ConfigIcon from "./ConfigIcon.tsx";
+import styled from "styled-components";
+
+const Container = styled.header`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const TopLeftText = styled.span`
+  font-weight: 700;
+  font-size: 3rem;
+`;
 
 function Header() {
-    return (
-        <>
-            <header className="header">
-                <div>
-                    <span className="span">your</span>
-                    <span className="span span--colored">/home</span>
-                </div>
-                <ConfigIcon width={50} height={50} />
-            </header>
-        </>
-    );
+  return (
+    <>
+      <Container>
+        <div>
+          <TopLeftText>your</TopLeftText>
+          <TopLeftText>/home</TopLeftText>
+        </div>
+        <ConfigIcon width={50} height={50} />
+      </Container>
+    </>
+  );
 }
 
 export default Header;
